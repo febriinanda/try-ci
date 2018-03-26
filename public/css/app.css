@@ -17,6 +17,27 @@ a.tombol, div.tombol, button.tombol {
     padding: 1em 2em; }
   a.tombol.penuh, div.tombol.penuh, button.tombol.penuh {
     width: 100%; }
+  a.tombol.merah, div.tombol.merah, button.tombol.merah {
+    background: #c23239;
+    color: #ffffff; }
+  a.tombol.kuning, div.tombol.kuning, button.tombol.kuning {
+    background: gold;
+    color: #000000; }
+  a.tombol.biru, div.tombol.biru, button.tombol.biru {
+    background: #1E90FF;
+    color: #ffffff; }
+  a.tombol.hijau, div.tombol.hijau, button.tombol.hijau {
+    background: #05be05;
+    color: #ffffff; }
+  a.tombol.putih, div.tombol.putih, button.tombol.putih {
+    background: #ffffff;
+    color: #000000; }
+  a.tombol.hitam, div.tombol.hitam, button.tombol.hitam {
+    background: #000000;
+    color: #ffffff; }
+  a.tombol.kelabu, div.tombol.kelabu, button.tombol.kelabu {
+    background: gray;
+    color: #ffffff; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
