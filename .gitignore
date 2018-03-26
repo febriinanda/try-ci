@@ -32,3 +32,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 system/
 user_guide/
+
+*.scss
+.sass*
