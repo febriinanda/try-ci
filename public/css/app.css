@@ -1,142 +1,31 @@
 a.tombol, div.tombol, button.tombol {
-  text-decoration: none;
-  font-size: .8em;
-  display: inline-block;
   padding: 1em;
   border: none;
-  border-radius: 2px;
-  cursor: pointer; }
-
-a.tombol.besar, div.tombol.besar, button.tombol.besar {
-  font-size: 1.5em;
+  background: #ccc;
+  color: black;
+  cursor: pointer;
   border-radius: 4px;
-  padding: .7em; }
-
-a.tombol.kecil, div.tombol.kecil, button.tombol.kecil {
-  font-size: .6em;
-  border-radius: 1px; }
-
-a.tombol, div.tombol, button.tombol {
-  background: #ccc; }
-  a.tombol:hover, div.tombol:hover, button.tombol:hover {
-    background: #c2c2c2; }
-  a.tombol.kosong, div.tombol.kosong, button.tombol.kosong {
-    background: none;
-    border-color: #ccc;
-    border-style: solid;
-    border-width: 2px;
-    color: #ccc; }
-    a.tombol.kosong:hover, div.tombol.kosong:hover, button.tombol.kosong:hover {
-      background: #ccc;
-      color: #000000; }
-
-a.tombol.merah, div.tombol.merah, button.tombol.merah {
-  background: #c23239;
-  color: #fff; }
-  a.tombol.merah:hover, div.tombol.merah:hover, button.tombol.merah:hover {
-    background: #b8282f; }
-  a.tombol.merah.kosong, div.tombol.merah.kosong, button.tombol.merah.kosong {
-    background: none;
-    border-color: #c23239;
-    border-style: solid;
-    border-width: 2px;
-    color: #c23239; }
-    a.tombol.merah.kosong:hover, div.tombol.merah.kosong:hover, button.tombol.merah.kosong:hover {
-      background: #c23239;
-      color: #fff; }
-
-a.tombol.kuning, div.tombol.kuning, button.tombol.kuning {
-  background: gold;
-  color: #000; }
-  a.tombol.kuning:hover, div.tombol.kuning:hover, button.tombol.kuning:hover {
-    background: #f5cd00; }
-  a.tombol.kuning.kosong, div.tombol.kuning.kosong, button.tombol.kuning.kosong {
-    background: none;
-    border-color: gold;
-    border-style: solid;
-    border-width: 2px;
-    color: gold; }
-    a.tombol.kuning.kosong:hover, div.tombol.kuning.kosong:hover, button.tombol.kuning.kosong:hover {
-      background: gold;
-      color: #000; }
-
-a.tombol.biru, div.tombol.biru, button.tombol.biru {
-  background: #1E90FF;
-  color: #fff; }
-  a.tombol.biru:hover, div.tombol.biru:hover, button.tombol.biru:hover {
-    background: #1486f5; }
-  a.tombol.biru.kosong, div.tombol.biru.kosong, button.tombol.biru.kosong {
-    background: none;
-    border-color: #1E90FF;
-    border-style: solid;
-    border-width: 2px;
-    color: #1E90FF; }
-    a.tombol.biru.kosong:hover, div.tombol.biru.kosong:hover, button.tombol.biru.kosong:hover {
-      background: #1E90FF;
-      color: #fff; }
-
-a.tombol.hijau, div.tombol.hijau, button.tombol.hijau {
-  background: #05be05;
-  color: #fff; }
-  a.tombol.hijau:hover, div.tombol.hijau:hover, button.tombol.hijau:hover {
-    background: #00b400; }
-  a.tombol.hijau.kosong, div.tombol.hijau.kosong, button.tombol.hijau.kosong {
-    background: none;
-    border-color: #05be05;
-    border-style: solid;
-    border-width: 2px;
-    color: #05be05; }
-    a.tombol.hijau.kosong:hover, div.tombol.hijau.kosong:hover, button.tombol.hijau.kosong:hover {
-      background: #05be05;
-      color: #fff; }
-
-a.tombol.putih, div.tombol.putih, button.tombol.putih {
-  background: #FFFFFF;
-  color: #000; }
-  a.tombol.putih:hover, div.tombol.putih:hover, button.tombol.putih:hover {
-    background: whitesmoke; }
-  a.tombol.putih.kosong, div.tombol.putih.kosong, button.tombol.putih.kosong {
-    background: none;
-    border-color: #FFFFFF;
-    border-style: solid;
-    border-width: 2px;
-    color: #FFFFFF; }
-    a.tombol.putih.kosong:hover, div.tombol.putih.kosong:hover, button.tombol.putih.kosong:hover {
-      background: #FFFFFF;
-      color: #000; }
-
-a.tombol.hitam, div.tombol.hitam, button.tombol.hitam {
-  background: #000000;
-  color: #fff; }
-  a.tombol.hitam:hover, div.tombol.hitam:hover, button.tombol.hitam:hover {
-    background: black; }
-  a.tombol.hitam.kosong, div.tombol.hitam.kosong, button.tombol.hitam.kosong {
-    background: none;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    color: #000000; }
-    a.tombol.hitam.kosong:hover, div.tombol.hitam.kosong:hover, button.tombol.hitam.kosong:hover {
-      background: #000000;
-      color: #fff; }
-
-a.tombol.kelabu, div.tombol.kelabu, button.tombol.kelabu {
-  background: gray;
-  color: #fff; }
-  a.tombol.kelabu:hover, div.tombol.kelabu:hover, button.tombol.kelabu:hover {
-    background: #767676; }
-  a.tombol.kelabu.kosong, div.tombol.kelabu.kosong, button.tombol.kelabu.kosong {
-    background: none;
-    border-color: gray;
-    border-style: solid;
-    border-width: 2px;
-    color: gray; }
-    a.tombol.kelabu.kosong:hover, div.tombol.kelabu.kosong:hover, button.tombol.kelabu.kosong:hover {
-      background: gray;
-      color: #fff; }
+  margin-bottom: 2px;
+  display: inline-block; }
+  a.tombol:focus, div.tombol:focus, button.tombol:focus {
+    outline: none; }
+  a.tombol.kecil, div.tombol.kecil, button.tombol.kecil {
+    font-size: .7em; }
+  a.tombol.besar, div.tombol.besar, button.tombol.besar {
+    font-size: 1.2em; }
+  a.tombol.lebar, div.tombol.lebar, button.tombol.lebar {
+    padding: 1em 2em; }
+  a.tombol.penuh, div.tombol.penuh, button.tombol.penuh {
+    width: 100%; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+a, a:hover, a:visited, a:active, a:disabled {
+  text-decoration: none; }
 
 /*# sourceMappingURL=app.css.map */
