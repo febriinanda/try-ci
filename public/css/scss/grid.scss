@@ -1,0 +1,28 @@
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+    .test > &{
+        border: 1px solid white;
+        background: grey;
+    }
+}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: 8.33% * $i;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}

@@ -35,6 +35,51 @@
     <div class="tombol putih">tombol </div>
     <div class="tombol hitam">tombol </div>
     <div class="tombol kelabu">tombol </div>
+    <div class="tombol coklat">tombol </div>
+</div>
+
+<div class="row test">
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+</div>
+
+<div class="row test">
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    <div class="col-2"></div>
+    
+</div>
+<div class="row test">
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>
+
+<div class="row test">
+    <div class="col-6"></div>
+    <div class="col-6"></div>
+</div>
+
+<div class="row test">
+    <div class="col-4"></div>
+    <div class="col-8"></div>
+</div>
+
+<div class="row test">
+    <div class="col-12"></div>
 </div>
 
 

@@ -20,25 +20,25 @@ a.tombol, div.tombol, button.tombol {
   a.tombol:hover, div.tombol:hover, button.tombol:hover {
     background: #b3b3b3; }
   a.tombol.merah, div.tombol.merah, button.tombol.merah {
-    background: #c23239;
+    background: #f44336;
     color: #ffffff; }
     a.tombol.merah:hover, div.tombol.merah:hover, button.tombol.merah:hover {
-      background: #a91920; }
+      background: #db2a1d; }
   a.tombol.kuning, div.tombol.kuning, button.tombol.kuning {
-    background: gold;
+    background: #ffeb3b;
     color: #000000; }
     a.tombol.kuning:hover, div.tombol.kuning:hover, button.tombol.kuning:hover {
-      background: #e6be00; }
+      background: #e6d222; }
   a.tombol.biru, div.tombol.biru, button.tombol.biru {
-    background: #1E90FF;
+    background: #2196f3;
     color: #ffffff; }
     a.tombol.biru:hover, div.tombol.biru:hover, button.tombol.biru:hover {
-      background: #0577e6; }
+      background: #087dda; }
   a.tombol.hijau, div.tombol.hijau, button.tombol.hijau {
-    background: #05be05;
+    background: #4caf50;
     color: #ffffff; }
     a.tombol.hijau:hover, div.tombol.hijau:hover, button.tombol.hijau:hover {
-      background: #00a500; }
+      background: #339637; }
   a.tombol.putih, div.tombol.putih, button.tombol.putih {
     background: #ffffff;
     color: #000000; }
@@ -50,11 +50,79 @@ a.tombol, div.tombol, button.tombol {
     a.tombol.hitam:hover, div.tombol.hitam:hover, button.tombol.hitam:hover {
       background: #191919; }
   a.tombol.kelabu, div.tombol.kelabu, button.tombol.kelabu {
-    background: gray;
+    background: #9e9e9e;
     color: #ffffff; }
     a.tombol.kelabu:hover, div.tombol.kelabu:hover, button.tombol.kelabu:hover {
-      background: #676767; }
+      background: #858585; }
+  a.tombol.coklat, div.tombol.coklat, button.tombol.coklat {
+    background: #795548;
+    color: #ffffff; }
+    a.tombol.coklat:hover, div.tombol.coklat:hover, button.tombol.coklat:hover {
+      background: #603c2f; }
 
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .tombol {
+    display: block !important;
+    text-align: center;
+    margin: auto;
+    width: 90%; } }
+@media screen and (max-width: 250px) {
+  /* For mobile phones: */
+  .tombol {
+    display: none !important; } }
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+  .test > [class*="col-"] {
+    border: 1px solid white;
+    background: grey; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 24.99%; }
+
+.col-4 {
+  width: 33.32%; }
+
+.col-5 {
+  width: 41.65%; }
+
+.col-6 {
+  width: 49.98%; }
+
+.col-7 {
+  width: 58.31%; }
+
+.col-8 {
+  width: 66.64%; }
+
+.col-9 {
+  width: 74.97%; }
+
+.col-10 {
+  width: 83.3%; }
+
+.col-11 {
+  width: 91.63%; }
+
+.col-12 {
+  width: 99.96%; }
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%; } }
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%; }

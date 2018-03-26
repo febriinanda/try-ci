@@ -1,0 +1,53 @@
+$merah: #f44336;
+$kuning: #ffeb3b;
+$biru: #2196f3;
+$hijau: #4caf50;
+$putih:#ffffff;
+$hitam:#000000;
+$kelabu: #9e9e9e;
+$coklat: #795548;
+
+$diffHover: 25;
+
+$colorMaps:(
+    merah:(
+        bg: $merah,
+        font: $putih,
+        hover: $merah - $diffHover
+    ),
+    kuning:(
+        bg: $kuning,
+        font: $hitam,
+        hover: $kuning - $diffHover
+    ),
+    biru:(
+        bg: $biru,
+        font: $putih,
+        hover: $biru - $diffHover
+    ),
+    hijau:(
+        bg: $hijau,
+        font: $putih,
+        hover: $hijau - $diffHover
+    ),
+    putih:(
+        bg: $putih,
+        font: $hitam,
+        hover: $putih - $diffHover
+    ),
+    hitam:(
+        bg: $hitam,
+        font: $putih,
+        hover: $hitam + $diffHover
+    ),
+    kelabu:(
+        bg: $kelabu,
+        font: $putih,
+        hover: $kelabu - $diffHover
+    ),
+    coklat:(
+        bg: $coklat,
+        font: $putih,
+        hover: $coklat - $diffHover
+    ),
+);

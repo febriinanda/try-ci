@@ -1,0 +1,62 @@
+@import 'maps.scss';
+
+a.tombol,div.tombol,button.tombol{
+    padding: 1em;
+    border: none;
+    background: #ccc;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    display: inline-block;
+
+    &:focus{
+        outline: none;
+    }
+
+    &.kecil{
+        font-size: .7em;
+    }
+
+    &.besar{
+        font-size: 1.2em;
+    }
+
+    &.lebar{
+        padding: 1em 2em;
+    }
+
+    &.penuh{
+        width: 100%;
+    }
+    &:hover{
+        background: #ccc - 25;
+    }
+    @each $key, $val in $colorMaps{
+        &.#{$key}{
+            background: map-get(map-get($colorMaps,$key),'bg');
+            color: map-get(map-get($colorMaps,$key),'font');
+
+            &:hover{
+                background: map-get(map-get($colorMaps,$key),'hover');
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .tombol {
+        display: block !important;
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    /* For mobile phones: */
+    .tombol {
+        display: none !important;
+    }
+}
