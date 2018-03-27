@@ -4,7 +4,10 @@ nav.menu{
     text-align: center;
     list-style: none;
     font-size: .8em;
-
+    a, a:hover, a:visited, a:active, a:disabled{
+        color: black;
+        
+    }
 
     &.side{
         height: 100vh;
@@ -34,6 +37,11 @@ nav.menu{
 
             li:hover, li.active{
                 background: map-get(map-get($colorMaps,$key),'hover');
+            }
+
+            a, a:hover, a:visited, a:active, a:disabled{
+                text-decoration: none;
+                color: map-get(map-get($colorMaps,$key),'font');
             }
         }
     }

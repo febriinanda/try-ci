@@ -129,6 +129,8 @@ nav.menu {
   text-align: center;
   list-style: none;
   font-size: .8em; }
+  nav.menu a, nav.menu a:hover, nav.menu a:visited, nav.menu a:active, nav.menu a:disabled {
+    color: black; }
   nav.menu.side {
     height: 100vh;
     padding-top: 1em; }
@@ -148,41 +150,144 @@ nav.menu {
     color: #ffffff; }
     nav.menu.merah li:hover, nav.menu.merah li.active {
       background: #db2a1d; }
+    nav.menu.merah a, nav.menu.merah a:hover, nav.menu.merah a:visited, nav.menu.merah a:active, nav.menu.merah a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
   nav.menu.kuning {
     background: #ffeb3b;
     color: #000000; }
     nav.menu.kuning li:hover, nav.menu.kuning li.active {
       background: #e6d222; }
+    nav.menu.kuning a, nav.menu.kuning a:hover, nav.menu.kuning a:visited, nav.menu.kuning a:active, nav.menu.kuning a:disabled {
+      text-decoration: none;
+      color: #000000; }
   nav.menu.biru {
     background: #2196f3;
     color: #ffffff; }
     nav.menu.biru li:hover, nav.menu.biru li.active {
       background: #087dda; }
+    nav.menu.biru a, nav.menu.biru a:hover, nav.menu.biru a:visited, nav.menu.biru a:active, nav.menu.biru a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
   nav.menu.hijau {
     background: #4caf50;
     color: #ffffff; }
     nav.menu.hijau li:hover, nav.menu.hijau li.active {
       background: #339637; }
+    nav.menu.hijau a, nav.menu.hijau a:hover, nav.menu.hijau a:visited, nav.menu.hijau a:active, nav.menu.hijau a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
   nav.menu.putih {
     background: #ffffff;
     color: #000000; }
     nav.menu.putih li:hover, nav.menu.putih li.active {
       background: #e6e6e6; }
+    nav.menu.putih a, nav.menu.putih a:hover, nav.menu.putih a:visited, nav.menu.putih a:active, nav.menu.putih a:disabled {
+      text-decoration: none;
+      color: #000000; }
   nav.menu.hitam {
     background: #000000;
     color: #ffffff; }
     nav.menu.hitam li:hover, nav.menu.hitam li.active {
       background: #191919; }
+    nav.menu.hitam a, nav.menu.hitam a:hover, nav.menu.hitam a:visited, nav.menu.hitam a:active, nav.menu.hitam a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
   nav.menu.kelabu {
     background: #9e9e9e;
     color: #ffffff; }
     nav.menu.kelabu li:hover, nav.menu.kelabu li.active {
       background: #858585; }
+    nav.menu.kelabu a, nav.menu.kelabu a:hover, nav.menu.kelabu a:visited, nav.menu.kelabu a:active, nav.menu.kelabu a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
   nav.menu.coklat {
     background: #795548;
     color: #ffffff; }
     nav.menu.coklat li:hover, nav.menu.coklat li.active {
       background: #603c2f; }
+    nav.menu.coklat a, nav.menu.coklat a:hover, nav.menu.coklat a:visited, nav.menu.coklat a:active, nav.menu.coklat a:disabled {
+      text-decoration: none;
+      color: #ffffff; }
+
+.card {
+  color: black;
+  font-size: .9em;
+  background: #c4c3c3;
+  display: inline-block; }
+  .card .title {
+    padding: 1em;
+    font-weight: bold;
+    background: #abaaaa;
+    border: 1px solid white;
+    border-width: 0 0 1px 0; }
+  .card .subtitle {
+    padding: 1em;
+    font-size: .8em; }
+  .card .action {
+    padding: .5em;
+    text-align: right;
+    border: 1px solid white;
+    border-width: 1px 0 0 0; }
+    .card .action a {
+      text-decoration: none;
+      color: black; }
+  .card.merah {
+    background: #f44336;
+    color: #ffffff; }
+    .card.merah .title {
+      background: #db2a1d; }
+    .card.merah a {
+      color: #ffffff; }
+  .card.kuning {
+    background: #ffeb3b;
+    color: #000000; }
+    .card.kuning .title {
+      background: #e6d222; }
+    .card.kuning a {
+      color: #000000; }
+  .card.biru {
+    background: #2196f3;
+    color: #ffffff; }
+    .card.biru .title {
+      background: #087dda; }
+    .card.biru a {
+      color: #ffffff; }
+  .card.hijau {
+    background: #4caf50;
+    color: #ffffff; }
+    .card.hijau .title {
+      background: #339637; }
+    .card.hijau a {
+      color: #ffffff; }
+  .card.putih {
+    background: #ffffff;
+    color: #000000; }
+    .card.putih .title {
+      background: #e6e6e6; }
+    .card.putih a {
+      color: #000000; }
+  .card.hitam {
+    background: #000000;
+    color: #ffffff; }
+    .card.hitam .title {
+      background: #191919; }
+    .card.hitam a {
+      color: #ffffff; }
+  .card.kelabu {
+    background: #9e9e9e;
+    color: #ffffff; }
+    .card.kelabu .title {
+      background: #858585; }
+    .card.kelabu a {
+      color: #ffffff; }
+  .card.coklat {
+    background: #795548;
+    color: #ffffff; }
+    .card.coklat .title {
+      background: #603c2f; }
+    .card.coklat a {
+      color: #ffffff; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;

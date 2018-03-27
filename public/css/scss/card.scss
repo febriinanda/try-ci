@@ -1,0 +1,47 @@
+.card{
+    color: black;
+    font-size: .9em;
+    background: #c4c3c3;
+    display: inline-block;
+
+    .title{
+        padding: 1em;
+        font-weight: bold;
+        background: #c4c3c3 - 25;
+        border: 1px solid white;
+        border-width: 0 0 1px 0;
+    }
+
+    .subtitle{
+        padding: 1em;
+        font-size: .8em;
+    }
+
+    .action{
+        padding: .5em;
+        text-align: right;
+        border: 1px solid white;
+        border-width: 1px 0 0 0;
+
+        a{
+            text-decoration: none;
+            color: black;
+            
+        }
+    }
+
+    @each $key, $val in $colorMaps{
+        &.#{$key}{
+            background: map-get(map-get($colorMaps,$key),'bg');
+            color: map-get(map-get($colorMaps,$key),'font');
+
+            .title{
+                background: map-get(map-get($colorMaps,$key),'hover');
+            }
+
+            a{
+                color: map-get(map-get($colorMaps,$key),'font');
+            }
+        }
+    }
+}
