@@ -6,7 +6,7 @@
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 0;
 
     .test > &{
         border: 1px solid white;

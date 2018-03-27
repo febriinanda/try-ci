@@ -1,0 +1,41 @@
+nav.menu{
+    background: #b3b2b2;
+    color: black;
+    text-align: center;
+    list-style: none;
+    font-size: .8em;
+
+
+    &.side{
+        height: 100vh;
+        padding-top: 1em;
+
+        li{
+            padding: 1em;
+            cursor: pointer;
+        }
+    }
+
+    &.top{
+        width: 100%;
+        text-align: start;
+        li{
+            padding: .5em 1em;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+    @each $key, $val in $colorMaps{
+        &.#{$key}{
+            background: map-get(map-get($colorMaps,$key),'bg');
+            color: map-get(map-get($colorMaps,$key),'font');
+
+            li:hover, li.active{
+                background: map-get(map-get($colorMaps,$key),'hover');
+            }
+        }
+    }
+    
+}

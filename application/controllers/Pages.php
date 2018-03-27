@@ -10,7 +10,7 @@
 
             $this->load->view('template/header', $data);
             $this->load->view('pages/'.$page, $data);
-            $this->load->view('template/footer', $data);
+            //$this->load->view('template/footer', $data);
 
         }
     }
