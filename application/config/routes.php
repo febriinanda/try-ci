@@ -53,6 +53,8 @@ $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
 
+$route['employees/edit/(:any)'] = 'employees/edit/$1';
+$route['employees/delete/(:any)'] = 'employees/delete/$1';
 $route['employees/create'] = 'employees/create';
 $route['employees/(:any)'] = 'employees/view/$1';
 $route['employees'] = 'employees';
