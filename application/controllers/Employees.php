@@ -33,23 +33,25 @@ class Employees extends CI_Controller{
     public function create(){
         $this->load->helper('form');
         $this->load->library('form_validation');
+        $data['result'] = 'failed';
 
-        $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('text', 'Text', 'required');
+        $this->form_validation->set_rules('firstname', 'First Name', 'required');
+        $this->form_validation->set_rules('lastname', 'Last Name', 'required');
+        $this->form_validation->set_rules('department', 'Department', 'required');
 
         $data['title'] = "New Employee";
 
         if ($this->form_validation->run() === FALSE)
         {
-            
             $this->load->view('template/header', $data);
             $this->load->view('employees/create');
-
         }
         else
         {
-            $this->news_model->set_employee();
-            $this->load->view('employees/success');
+            $this->employees_model->set_employee();
+            $data['result'] = 'success';
+            $this->load->view('template/header', $data);
+            $this->load->view('employees/create', $data);
         }
         
     }

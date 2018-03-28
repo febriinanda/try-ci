@@ -1,0 +1,15 @@
+.input{
+    margin: 0 0 4px 0;
+    label{
+        display: block;
+        font-size: .8em;
+        color: darken($kelabu, 5);
+    }
+
+    input{
+        padding: .7em;
+        border: 1px solid lighten($kelabu, 20);
+        border-radius: 4px;
+        width: 100%;
+    }
+}

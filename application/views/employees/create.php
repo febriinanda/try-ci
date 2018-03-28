@@ -17,21 +17,30 @@
         </nav>
         <div class="content">
         <h2><?php echo $title; ?></h2>
-        
 
         <?php echo form_open('employees/create'); ?>
 
-            <label for="title">Title</label>
-            <input type="input" name="title" /><br />
-
-            <label for="text">Text</label>
-            <textarea name="text"></textarea><br />
-
-            <input type="submit" name="submit" value="Create news item" />
+            <div class="input">
+                <label>First name</label>
+                <input type="text" name="firstname">
+            </div>
+            <div class="input">
+                <label>Last name</label>
+                <input type="text" name="lastname">
+            </div>
+            <div class="input">
+                <label>Department</label>
+                <input type="text" name="department">
+            </div>
+            <button class="tombol biru">Create</button>
 
         </form>
         <div class="<?php if(validation_errors()) echo 'message merah'?>">
             <?php echo validation_errors(); ?>
+        </div>
+
+        <div class="<?php if($result == 'success') echo 'message hijau'; else echo "message no"?>">
+            <?php echo "Successfully add new employee!"; ?>
         </div>
         
         </div>

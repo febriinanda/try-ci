@@ -284,6 +284,20 @@ nav.menu {
     background: #cbb1a8;
     color: #795548;
     border: 1px solid #996b5b; }
+  .message.no {
+    display: none; }
+
+.input {
+  margin: 0 0 4px 0; }
+  .input label {
+    display: block;
+    font-size: .8em;
+    color: #919191; }
+  .input input {
+    padding: .7em;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    width: 100%; }
 
 body {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
