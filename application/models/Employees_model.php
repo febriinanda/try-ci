@@ -37,6 +37,24 @@ class Employees_model extends CI_Model{
         return $this->db->insert($this->table_name, $data);
     }
 
+    public function update_employee($employee)
+    {
+        $this->load->helper('url');
+        
+        $fullname = ucwords($this->input->post('fullname'));
+        $data = array(
+            'id' => $employee['id'],
+            'username' => $employee['username'],
+            'password' => $employee['password'],
+            'fullname' => $fullname, 
+            'department'=> $this->input->post('department'), 
+            'status' => $employee['status'], 
+            'avatar' => $employee['avatar'] 
+        );
+
+        return $this->db->replace($this->table_name, $data);
+    }
+
     private function randomString($length = 6) {
         $str = "";
         $characters = array_merge(range('A','Z'), range('a','z'), range('0','9'));

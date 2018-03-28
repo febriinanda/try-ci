@@ -27,7 +27,11 @@
             
             <div class="input">
                 <label>Department</label>
-                <input type="text" name="department">
+                <select name="department">
+                    <?php foreach($department as $list):?>
+                        <option value="<?php echo $list; ?>"><?php echo $list; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </div>
             <button class="tombol biru">Create</button>
 

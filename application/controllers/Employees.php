@@ -42,7 +42,7 @@ class Employees extends CI_Controller{
         $this->load->helper('form');
         $this->load->library('form_validation');
         $data['result'] = 'failed';
-
+        $data['department'] = $this->department;
         $this->form_validation->set_rules('fullname', 'Full Name', 'required');
         $this->form_validation->set_rules('department', 'Department', 'required');
 
@@ -74,7 +74,7 @@ class Employees extends CI_Controller{
         $data['title'] = "Edit Employee";
         $data['employee'] = $this->employees_model->get_employees($id);
         $data['department'] = $this->department;
-        
+
         if ($this->form_validation->run() === FALSE)
         {
             $this->load->view('template/header', $data);
@@ -82,10 +82,11 @@ class Employees extends CI_Controller{
         }
         else
         {
-            $this->employees_model->update_employee();
+            $this->employees_model->update_employee($data['employee']);
             $data['result'] = 'success';
-            $this->load->view('template/header', $data);
-            $this->load->view('employees/edit', $data);
+            $data['employee'] = $this->employees_model->get_employees($id);
+            $this->load->view('template/header',$data);
+            $this->load->view('employees/edit');
         }
         
     }

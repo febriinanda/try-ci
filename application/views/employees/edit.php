@@ -18,12 +18,7 @@
         <div class="content">
         <h2><?php echo $title; ?></h2>
 
-        <?php echo form_open('employees/edit'); ?>
-            <div class="input">
-                <label>ID</label>
-                <input type="text" name="id" value="<?php echo $employee['id'];?>" readonly disabled>
-            </div>
-
+        <?php echo form_open('employees/edit/'.$employee['id']); ?>
             <div class="input">
                 <label>Full name</label>
                 <input type="text" name="fullname" value="<?php echo $employee['fullname'];?>">
