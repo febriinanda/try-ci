@@ -1,0 +1,23 @@
+.message{
+    margin: 10px 0;
+    padding: 1em;
+    background: lighten($kelabu, 25);
+    border: 1px solid $kelabu;
+    color: $kelabu;
+    border-radius: 5px;
+
+    p{
+        margin: 0;
+        font-size: .9em;
+    }
+
+    @each $key, $val in $colorMaps{
+        &.#{$key}{
+            background: lighten(map-get(map-get($colorMaps,$key),'hover'), 25);
+            color: map-get(map-get($colorMaps,$key),'bg');
+            border: 1px solid map-get(map-get($colorMaps,$key),'hover');
+        }
+    }
+
+    
+}

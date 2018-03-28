@@ -13,7 +13,7 @@ class Employees extends CI_Controller{
 
         $this->load->view('template/header', $data);
         $this->load->view('employees/index', $data);
-        // $this->load->view('template/footer', $data);
+        
     }
 
     public function view($id = NULL){
@@ -27,7 +27,31 @@ class Employees extends CI_Controller{
 
         $this->load->view('template/header', $data);
         $this->load->view('employees/view', $data);
-        $this->load->view('template/footer');
+        
+    }
+
+    public function create(){
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('text', 'Text', 'required');
+
+        $data['title'] = "New Employee";
+
+        if ($this->form_validation->run() === FALSE)
+        {
+            
+            $this->load->view('template/header', $data);
+            $this->load->view('employees/create');
+
+        }
+        else
+        {
+            $this->news_model->set_employee();
+            $this->load->view('employees/success');
+        }
+        
     }
 }
 ?>

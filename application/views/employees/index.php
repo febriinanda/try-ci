@@ -11,8 +11,8 @@
     </div>
     <div class="col-11">
         <nav class="menu top hijau">
-            <a href="<?php echo site_url("/")?>"><li class="">New</li></a>
-            <a href="<?php echo site_url("employee")?>"><li class="">Update</li></a>
+            <a href="<?php echo site_url("employees/create")?>"><li class="">New</li></a>
+            <a href="<?php echo site_url("employees")?>"><li class="">Update</li></a>
             <a href="<?php echo site_url("/")?>"><li class="">Delete</li></a>
         </nav>
         <div class="content">

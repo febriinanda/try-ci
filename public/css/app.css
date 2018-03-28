@@ -242,6 +242,49 @@ nav.menu {
       .card .action a:hover {
         color: #2196f3; }
 
+.message {
+  margin: 10px 0;
+  padding: 1em;
+  background: #dedede;
+  border: 1px solid #9e9e9e;
+  color: #9e9e9e;
+  border-radius: 5px; }
+  .message p {
+    margin: 0;
+    font-size: .9em; }
+  .message.merah {
+    background: #fde1df;
+    color: #f44336;
+    border: 1px solid #f77066; }
+  .message.kuning {
+    background: #fffdee;
+    color: #ffeb3b;
+    border: 1px solid #fff06e; }
+  .message.biru {
+    background: #cae6fc;
+    color: #2196f3;
+    border: 1px solid #51adf6; }
+  .message.hijau {
+    background: #c7e7c8;
+    color: #4caf50;
+    border: 1px solid #6ec071; }
+  .message.putih {
+    background: white;
+    color: #ffffff;
+    border: 1px solid #e6e6e6; }
+  .message.hitam {
+    background: #595959;
+    color: #000000;
+    border: 1px solid #1a1a1a; }
+  .message.kelabu {
+    background: #f7f7f7;
+    color: #9e9e9e;
+    border: 1px solid #b8b8b8; }
+  .message.coklat {
+    background: #cbb1a8;
+    color: #795548;
+    border: 1px solid #996b5b; }
+
 body {
   font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
   font-size: 100%; }

@@ -11,26 +11,29 @@
     </div>
     <div class="col-11">
         <nav class="menu top hijau">
-            <a href="<?php echo site_url("employees/create")?>"><li class="">New</li></a>
+            <a href="<?php echo site_url("employees/create")?>"><li class="active">New</li></a>
             <a href="<?php echo site_url("employees")?>"><li class="">Update</li></a>
             <a href="<?php echo site_url("/")?>"><li class="">Delete</li></a>
         </nav>
         <div class="content">
         <h2><?php echo $title; ?></h2>
         
-            <div class="card merah">
-                <div class="content">
-                    <div class="subtitle">
-                        <?php echo $item['department']; ?> Department
-                    </div>
-                    <div class="description">
-                        <?php echo $item['fullname']; ?> joined in <?php echo $item['department']; ?> Department from 2010
-                    </div>
-                </div>
-            </div>
-            
-            
 
+        <?php echo form_open('employees/create'); ?>
+
+            <label for="title">Title</label>
+            <input type="input" name="title" /><br />
+
+            <label for="text">Text</label>
+            <textarea name="text"></textarea><br />
+
+            <input type="submit" name="submit" value="Create news item" />
+
+        </form>
+        <div class="<?php if(validation_errors()) echo 'message merah'?>">
+            <?php echo validation_errors(); ?>
+        </div>
+        
         </div>
     </div>
 </div>
