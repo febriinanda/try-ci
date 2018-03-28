@@ -1,47 +1,51 @@
 .card{
-    color: black;
+    color: #000000ad;
     font-size: .9em;
-    background: #c4c3c3;
-    display: inline-block;
+    background: #fff;
+    border: 1px solid #d3d1d1;
+    margin: 0 5px 5px 0;
+    border-radius: 5px;
+    
+    // display: inline-block;
 
-    .title{
+    .content{
         padding: 1em;
-        font-weight: bold;
-        background: #c4c3c3 - 25;
-        border: 1px solid white;
-        border-width: 0 0 1px 0;
-    }
 
-    .subtitle{
-        padding: 1em;
-        font-size: .8em;
+        .title{
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 0 0 .3em;
+        }
+
+        .subtitle{
+            font-size: .8em;
+            color: #b8b5b5;
+            padding: 0 0 .5em;
+        }
+
+        .description{
+            font-size: .9em;
+            padding: .2em 0 .3em;
+        }
+
     }
 
     .action{
-        padding: .5em;
+        padding: 1em;
         text-align: right;
-        border: 1px solid white;
+        border: 1px solid #e9e7e7;
         border-width: 1px 0 0 0;
+        font-size: .7em;
 
         a{
             text-decoration: none;
-            color: black;
-            
-        }
-    }
+            color: #b8b5b5;
 
-    @each $key, $val in $colorMaps{
-        &.#{$key}{
-            background: map-get(map-get($colorMaps,$key),'bg');
-            color: map-get(map-get($colorMaps,$key),'font');
-
-            .title{
-                background: map-get(map-get($colorMaps,$key),'hover');
-            }
-
-            a{
-                color: map-get(map-get($colorMaps,$key),'font');
+            &:hover{
+                color: $biru;
             }
         }
+
+
     }
 }

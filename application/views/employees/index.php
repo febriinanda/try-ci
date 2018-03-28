@@ -3,7 +3,7 @@
         <nav class="menu side hijau">
             <div><h1>HRIS</h1></div>
             <a href="<?php echo site_url("/")?>"><li class="">Home</li></a>
-            <a href="<?php echo site_url("employee")?>"><li class="active">Employee</li></a>
+            <a href="<?php echo site_url("employees")?>"><li class="active">Employee</li></a>
             <a href="<?php echo site_url("/")?>"><li class="">Holiday</li></a>
             <a href="<?php echo site_url("/")?>"><li class="">Payroll</li></a>
             <a href="<?php echo site_url("/")?>"><li class="">Attendent</li></a>
@@ -18,16 +18,23 @@
         <div class="content">
         <h2><?php echo $title; ?></h2>
         <?php foreach ($employees as $data): ?>
-            <div class="card ungu">
-                <div class="title">
-                    <?php echo $data['fullname']; ?>
-                </div>
-                <div class="subtitle">
-                    <?php echo $data['department']; ?> Department
+            <div class="card merah">
+                <div class="content">
+                    <div class="title">
+                        <?php echo $data['fullname']; ?>
+                    </div>
+                    <div class="subtitle">
+                        <?php echo $data['department']; ?> Department
+                    </div>
+                    <div class="description">
+                        <?php echo $data['fullname']; ?> joined in <?php echo $data['department']; ?> Department from 2010
+                    </div>
+                    
                 </div>
                 <div class="action">
                     <a href="<?php echo site_url('employees/'.$data['id']); ?>">View</a>
                 </div>
+                
             </div>
             
             

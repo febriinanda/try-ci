@@ -7,47 +7,47 @@ $hitam:#000000;
 $kelabu: #9e9e9e;
 $coklat: #795548;
 
-$diffHover: 25;
+$diffHover: 10;
 
 $colorMaps:(
     merah:(
         bg: $merah,
         font: $putih,
-        hover: $merah - $diffHover
+        hover: lighten($merah,$diffHover)
     ),
     kuning:(
         bg: $kuning,
         font: $hitam,
-        hover: $kuning - $diffHover
+        hover: lighten($kuning,$diffHover)
     ),
     biru:(
         bg: $biru,
         font: $putih,
-        hover: $biru - $diffHover
+        hover: lighten($biru,$diffHover)
     ),
     hijau:(
         bg: $hijau,
         font: $putih,
-        hover: $hijau - $diffHover
+        hover: lighten($hijau,$diffHover)
     ),
     putih:(
         bg: $putih,
         font: $hitam,
-        hover: $putih - $diffHover
+        hover: darken($putih,$diffHover)
     ),
     hitam:(
         bg: $hitam,
         font: $putih,
-        hover: $hitam + $diffHover
+        hover: lighten($hitam,$diffHover)
     ),
     kelabu:(
         bg: $kelabu,
         font: $putih,
-        hover: $kelabu - $diffHover
+        hover: lighten($kelabu,$diffHover)
     ),
     coklat:(
         bg: $coklat,
         font: $putih,
-        hover: $coklat - $diffHover
+        hover: lighten($coklat,$diffHover)
     ),
 );
