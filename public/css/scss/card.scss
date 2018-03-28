@@ -27,7 +27,6 @@
             font-size: .9em;
             padding: .2em 0 .3em;
         }
-
     }
 
     .action{
@@ -40,12 +39,17 @@
         a{
             text-decoration: none;
             color: #b8b5b5;
+            margin-right: 3px;
 
             &:hover{
                 color: $biru;
             }
         }
+    }
 
-
+    @each $key, $val in $colorMaps{
+        &.#{$key}{
+            border-bottom: 2px solid map-get(map-get($colorMaps,$key),'hover');
+        }
     }
 }

@@ -238,9 +238,26 @@ nav.menu {
     font-size: .7em; }
     .card .action a {
       text-decoration: none;
-      color: #b8b5b5; }
+      color: #b8b5b5;
+      margin-right: 3px; }
       .card .action a:hover {
         color: #2196f3; }
+  .card.merah {
+    border-bottom: 2px solid #f77066; }
+  .card.kuning {
+    border-bottom: 2px solid #fff06e; }
+  .card.biru {
+    border-bottom: 2px solid #51adf6; }
+  .card.hijau {
+    border-bottom: 2px solid #6ec071; }
+  .card.putih {
+    border-bottom: 2px solid #e6e6e6; }
+  .card.hitam {
+    border-bottom: 2px solid #1a1a1a; }
+  .card.kelabu {
+    border-bottom: 2px solid #b8b8b8; }
+  .card.coklat {
+    border-bottom: 2px solid #996b5b; }
 
 .message {
   margin: 10px 0;
@@ -293,7 +310,7 @@ nav.menu {
     display: block;
     font-size: .8em;
     color: #919191; }
-  .input input {
+  .input input, .input select {
     padding: .7em;
     border: 1px solid #d1d1d1;
     border-radius: 4px;
