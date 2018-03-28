@@ -1,6 +1,7 @@
 <?php
 class Employees_model extends CI_Model{
     var $table_name = "users";
+    
     public function __construct(){
         $this->load->database();
     }
@@ -19,7 +20,6 @@ class Employees_model extends CI_Model{
     {
         $this->load->helper('url');
         $id = $this->uuid->v4();
-        // $username = strtolower($this->input->post('firstname')).".".strtolower($this->input->post('lastname'));
         $fullname = ucwords($this->input->post('fullname'));
         $password = $this->randomString();
         $username = url_title(strtolower($this->input->post('fullname')), '.', TRUE);
