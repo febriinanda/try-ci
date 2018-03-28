@@ -39,8 +39,6 @@ class Employees_model extends CI_Model{
 
     public function update_employee($employee)
     {
-        $this->load->helper('url');
-        
         $fullname = ucwords($this->input->post('fullname'));
         $data = array(
             'id' => $employee['id'],
