@@ -1,5 +1,13 @@
 <?php
 class Employees extends CI_Controller{
+    private $department = [
+        "Human Resource",
+        "Information Technology",
+        "Sales",
+        "Finance",
+        "Marketing",
+        "Logistic"
+    ];
 
     public function __construct(){
         parent::__construct();
@@ -51,6 +59,33 @@ class Employees extends CI_Controller{
             $data['result'] = 'success';
             $this->load->view('template/header', $data);
             $this->load->view('employees/create', $data);
+        }
+        
+    }
+
+    public function edit($id = null){
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $data['result'] = 'failed';
+
+        $this->form_validation->set_rules('fullname', 'Full Name', 'required');
+        $this->form_validation->set_rules('department', 'Department', 'required');
+
+        $data['title'] = "Edit Employee";
+        $data['employee'] = $this->employees_model->get_employees($id);
+        $data['department'] = $this->department;
+        
+        if ($this->form_validation->run() === FALSE)
+        {
+            $this->load->view('template/header', $data);
+            $this->load->view('employees/edit', $data);
+        }
+        else
+        {
+            $this->employees_model->update_employee();
+            $data['result'] = 'success';
+            $this->load->view('template/header', $data);
+            $this->load->view('employees/edit', $data);
         }
         
     }
