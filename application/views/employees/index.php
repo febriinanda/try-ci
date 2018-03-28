@@ -18,7 +18,7 @@
         <div class="content">
         <h2><?php echo $title; ?></h2>
         <?php foreach ($employees as $data): ?>
-            <div class="card merah">
+            <div class="card hijau">
                 <div class="content">
                     <div class="title">
                         <?php echo $data['fullname']; ?>
@@ -33,12 +33,10 @@
                 </div>
                 <div class="action">
                     <a href="<?php echo site_url('employees/'.$data['id']); ?>">View</a>
+                    <a href="<?php echo site_url('employees/edit/'.$data['id']); ?>">Edit</a>
+                    <a href="<?php echo site_url('employees/delete/'.$data['id']); ?>">Delete</a>
                 </div>
-                
             </div>
-            
-            
-
         <?php endforeach; ?>
         </div>
     </div>
