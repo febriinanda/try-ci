@@ -35,8 +35,7 @@ class Employees extends CI_Controller{
         $this->load->library('form_validation');
         $data['result'] = 'failed';
 
-        $this->form_validation->set_rules('firstname', 'First Name', 'required');
-        $this->form_validation->set_rules('lastname', 'Last Name', 'required');
+        $this->form_validation->set_rules('fullname', 'Full Name', 'required');
         $this->form_validation->set_rules('department', 'Department', 'required');
 
         $data['title'] = "New Employee";

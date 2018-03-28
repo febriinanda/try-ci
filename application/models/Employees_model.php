@@ -19,9 +19,10 @@ class Employees_model extends CI_Model{
     {
         $this->load->helper('url');
         $id = $this->uuid->v4();
-        $username = strtolower($this->input->post('firstname')).".".strtolower($this->input->post('lastname'));
-        $fullname = ucfirst($this->input->post('firstname'))." ".ucfirst($this->input->post('lastname'));
+        // $username = strtolower($this->input->post('firstname')).".".strtolower($this->input->post('lastname'));
+        $fullname = ucwords($this->input->post('fullname'));
         $password = $this->randomString();
+        $username = url_title(strtolower($this->input->post('fullname')), '.', TRUE);
         
         $data = array(
             'id' => $id,

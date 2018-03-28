@@ -21,13 +21,10 @@
         <?php echo form_open('employees/create'); ?>
 
             <div class="input">
-                <label>First name</label>
-                <input type="text" name="firstname">
+                <label>Full name</label>
+                <input type="text" name="fullname">
             </div>
-            <div class="input">
-                <label>Last name</label>
-                <input type="text" name="lastname">
-            </div>
+            
             <div class="input">
                 <label>Department</label>
                 <input type="text" name="department">
